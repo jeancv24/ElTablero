@@ -1,0 +1,121 @@
+/*
+font-family: 'Roboto', sans-serif;
+font-weight: 300;
+font-weight: 400;
+font-weight: 900;
+*/
+body {
+  background-color: #000;
+  max-width: 100%;
+}
+
+.row {
+  --bs-gutter-x: 0rem;
+}
+
+.container-fluid {
+  padding: 0em;
+}
+
+.logo-container {
+  text-decoration: none;
+}
+
+.logo {
+  width: 10em;
+  margin-right: 2em;
+}
+
+.nav-container {
+  margin: 1em 0 0.2em 0;
+  padding: 0em;
+}
+
+.top-nav {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 2.5em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+}
+.top-nav:hover {
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  color: #FF8036;
+}
+
+h1 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding-top: 1em;
+  margin-bottom: 0;
+}
+
+.line {
+  width: 70px;
+  height: 1px;
+  padding: 0;
+  margin: auto;
+  background: #00D5FF;
+  display: block;
+  margin-top: 0.2em;
+  margin-bottom: 3em;
+}
+
+.container-torneos {
+  background: url(../imgs/main_img.jpg);
+  width: 100%;
+  display: block;
+}
+
+.photos-container {
+  width: 100%;
+}
+
+.image-size {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.image-container {
+  margin: 0 2em 2.5em 2em;
+  position: relative;
+  display: block;
+  background-color: #393939;
+  border-radius: 1em;
+  padding: 0em;
+}
+
+.title {
+  margin: 0 0 0.5em 1em;
+  padding: 0.5em 0 0 0;
+  font-weight: 900;
+  font-size: 1.4em;
+  color: #FF8036;
+}
+
+.description {
+  position: relative;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 1em;
+  padding: 0em;
+  color: #fff;
+}
+
+footer {
+  margin-top: 1em;
+}
+
+.footer-p {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin: 0.5em;
+  text-align: center;
+}

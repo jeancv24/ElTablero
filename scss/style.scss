@@ -1,0 +1,125 @@
+//variables
+$naranja: #FF8036;
+$turquesa: #00D5FF;
+$black: #000;
+$white: #fff;
+$gray: #393939;
+/*
+font-family: 'Roboto', sans-serif;
+font-weight: 300;
+font-weight: 400;
+font-weight: 900;
+*/
+body{
+    background-color: $black;
+    max-width: 100%;
+}
+.row {
+    --bs-gutter-x: 0rem;
+}
+.container-fluid{
+    padding: 0em;
+}
+//header
+.logo-container{
+    text-decoration: none;
+}
+.logo{
+    width: 10em;
+    margin-right: 2em;
+}
+//nav
+.nav-container{
+    margin: 1em 0 0.2em 0;
+    padding: 0em;
+}
+.top-nav{
+    text-decoration: none;
+    color: $white;
+    margin: 0 2.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+    
+    &:hover{
+        transition: all ease .5s;
+        color: $naranja;
+    }
+}
+//header
+
+//torneos
+h1{
+    color: $white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding-top: 1em;
+    margin-bottom: 0;
+}
+
+.line{
+    width: 70px;
+    height: 1px;
+    padding: 0;
+    margin: auto;
+    background: $turquesa;
+    display: block;
+    margin-top: 0.2em;
+    margin-bottom: 3em;
+}
+
+.container-torneos{
+    background: url(../imgs/main_img.jpg);
+    width: 100%;
+    display: block;
+}
+
+.photos-container {
+    width: 100%;
+}
+
+.image-size {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.image-container {
+    margin: 0 2em 2.5em 2em;
+    position: relative;
+    display: block;
+    background-color: $gray;
+    border-radius: 1em;
+    padding: 0em;
+}
+
+.title {
+    margin: 0 0 0.5em 1em;
+    padding: 0.5em 0 0 0;
+    font-weight: 900;
+    font-size: 1.4em;
+    color: $naranja;
+}
+
+.description {
+    position: relative;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    margin: 1em;
+    padding: 0em;
+    color: $white;
+}
+
+//footer
+footer{
+    margin-top: 1em;
+}
+.footer-p{
+    color: $white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 0.5em;
+    text-align: center;
+}
