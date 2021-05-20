@@ -46,6 +46,10 @@ body {
   text-decoration: underline;
 }
 
+.selected-nav {
+  color: #FF8036;
+}
+
 .text-field {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -75,7 +79,7 @@ body {
   border: 3px solid #00D5FF;
 }
 
-h1 {
+.h1-torneos {
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-weight: 300;

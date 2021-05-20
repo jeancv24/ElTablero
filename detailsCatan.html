@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Tablero</title>
+    <!-- Bootstrap link/version -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">    <!-- Main stylesheet -->
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/datailsPages.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- header -->
+        <header class="">
+            <div class="row justify-content-center nav-container">
+                <!-- nav -->
+                <nav class="col-10">
+                    <ul>
+                        <a class="logo-container" href="index.html">
+                            <img class="logo" src="imgs/logo_amplio.png" alt="main logo">
+                        </a>
+                        <a class="top-nav selected-nav" href="detailsCatan.html">Catan</a>
+                        <a class="top-nav" href="details_carcassone.html">Carcassone</a>
+                        <a class="top-nav" href="details_stoneage.html">Stone Age</a>
+                        <a class="top-nav" href="details_scythe.html">Scythe</a>
+                    </ul>
+                </nav>
+                <!-- nav -->
+                <!--buscar-->
+                <section class="col-2">
+                    <form action="#" method="POST">
+                        <input id="busqueda" class="text-field" type="text" name="busqueda" placeholder="Buscar">
+                        <input class="btn-buscar" type="submit" value="">
+                    </form>
+                </section>
+                <!--buscar-->
+            </div>
+        </header>
+        <!-- header -->
+        <!-- torneos -->
+        <div class="main-container">
+            <!-- h1 title -->
+            <img class="logo-catan" src="./imgs/catan_logo_sin fondo.png" alt="logo de Catan">
+            <div class="row justify-content-center">
+                <section class="col-10 text-container">
+                    <h1 class="row justify-content-center h1-title">Información</h1>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo plebiscito decreta a senatu est consuli quaestio Cn. Sed quid sentiat, non videtis. Moriatur, inquit. Magna laus.
+                        
+                        </p><br>
+                    <p class="description">
+                        Duo Reges: constructio interrete:</p><br>
+                    <p class="description">
+                        -Hoc sic expositum dissimile est superiori.</p><br>
+                    <p class="description">-Tubulo putas dicere?</p><br>
+                    <p class="description">-Epicurus ignorat? Sed nimis multa.</p>
+                </section>
+            </div>
+            <div class="row justify-content-center">
+                <!--boton de registro-->
+                <a  class="row justify-content-center big-btn" href="registroCatan.html">Registro</a>
+            </div>
+        </div>
+        <!-- torneos -->
+        <!-- footer -->
+            <footer>
+                <img class="footer-logo" src="imgs/logo_simpre.png" alt="simple logo">
+                <div class="row justify-content-center">
+                    <p class="footer-p col-1">Copyright 2021</p>
+                </div>
+                <div class="row justify-content-center">
+                    <p class="footer-p col-2">All rights reserved</p>
+                </div>
+            </footer>
+        <!-- footer -->
+    </div>
+</body>
+</html>

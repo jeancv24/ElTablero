@@ -1,0 +1,71 @@
+@import 'vars';
+//logo del juego
+.logo-catan{
+    width: 15em;
+    margin-left: 15em;
+}
+
+//contenedor de informacion
+.main-container{
+    background: url(../imgs/catan2.jpg);
+    width: 100%;
+    display: block;
+    padding-bottom: 3em;
+    object-fit: cover;
+}
+
+.text-container{
+    width: 65em;
+    position: relative;
+    background-color: $gray;
+    border-radius: 1em;
+    padding: 1em 1.5em;
+}
+
+.h1-title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: $turquesa;
+    font-size: 1.5em;
+}
+
+//boton registro
+.big-btn{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: $gray;
+    background-color: $naranja;
+    margin: 3em 0 1em 0;
+    width: 150px;
+    height: 60px;
+    padding: 13px;
+    border-radius: 25px;
+    &:hover{
+        transition: all ease .5s;
+        background-color: $white;
+    }
+}
+
+//ingreso de datos
+.datos-container{
+    width: 30em;
+    position: relative;
+    background-color: $gray;
+    border-radius: 1em;
+    padding: 2em 7em;
+}
+.datos-text-field{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    border: 3px solid $lightgray;
+    padding-left: 4px;
+    width: 15em;
+    margin: 3em 0 0 0;
+    float: left;
+    &:focus{
+        border: 3px solid $turquesa;
+        outline: none;
+    }
+}
