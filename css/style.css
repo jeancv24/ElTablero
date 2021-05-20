@@ -43,6 +43,36 @@ body {
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
   color: #FF8036;
+  text-decoration: underline;
+}
+
+.text-field {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  border: 3px solid #707070;
+  padding-left: 4px;
+  width: 9em;
+  margin: 1em 0 0 0;
+  float: left;
+}
+.text-field:focus {
+  border: 3px solid #00D5FF;
+  outline: none;
+}
+
+.btn-buscar {
+  background-color: #393939;
+  background: url(../imgs/icono_buscar.png);
+  border: 3px solid #707070;
+  border-radius: 13px;
+  width: 65px;
+  height: 65px;
+  margin-left: 1em;
+}
+.btn-buscar:hover {
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  border: 3px solid #00D5FF;
 }
 
 h1 {
@@ -68,6 +98,7 @@ h1 {
   background: url(../imgs/main_img.jpg);
   width: 100%;
   display: block;
+  padding-bottom: 4em;
 }
 
 .photos-container {
@@ -78,6 +109,7 @@ h1 {
   width: 100%;
   display: block;
   position: relative;
+  height: 160px;
 }
 
 .image-container {
@@ -108,14 +140,41 @@ h1 {
   color: #fff;
 }
 
+.btn-vermas {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: #393939;
+  background-color: #FF8036;
+  margin: 0.2em 0 1em 0;
+  width: 110px;
+  height: 40px;
+  padding: 7px;
+  border-radius: 20px;
+}
+.btn-vermas:hover {
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  background-color: #fff;
+}
+
 footer {
-  margin-top: 1em;
+  padding-top: 0.4em;
+  padding-bottom: 0.5em;
+  background-color: #393939;
+}
+
+.footer-logo {
+  width: 10em;
+  position: absolute;
+  margin: 1.4em 0 0 1.5em;
 }
 
 .footer-p {
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  margin: 0.5em;
+  margin: 0.4em;
   text-align: center;
 }
