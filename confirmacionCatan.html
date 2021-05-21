@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Tablero</title>
+    <!-- Bootstrap link/version -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">    <!-- Main stylesheet -->
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/datailsPages.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- header -->
+        <header class="">
+            <div class="row justify-content-center nav-container">
+                <!-- nav -->
+                <nav class="col-10">
+                    <ul>
+                        <a class="logo-container" href="index.html">
+                            <img class="logo" src="imgs/logo_amplio.png" alt="main logo">
+                        </a>
+                        <a class="top-nav selected-nav" href="detailsCatan.html">Catan</a>
+                        <a class="top-nav" href="details_carcassone.html">Carcassone</a>
+                        <a class="top-nav" href="details_stoneage.html">Stone Age</a>
+                        <a class="top-nav" href="details_scythe.html">Scythe</a>
+                    </ul>
+                </nav>
+                <!-- nav -->
+                <!--buscar-->
+                <section class="col-2">
+                    <form action="#" method="POST">
+                        <input id="busqueda" class="text-field" type="text" name="busqueda" placeholder="Buscar">
+                        <input class="btn-buscar" type="submit" value="">
+                    </form>
+                </section>
+                <!--buscar-->
+            </div>
+        </header>
+        <!-- header -->
+        <!-- informacion del registro -->
+        <div class="main-container">
+            <!-- h1 title -->
+            <img class="logo-catan" src="./imgs/catan_logo_sin fondo.png" alt="logo de Catan">
+            <div class="row justify-content-center">
+                <section class="col-10 text-container">
+                    <h1 class="row justify-content-center h1-title">Confirme su registro</h1>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Conferam tecum, quam cuique verso rem subicias; Scaevolam M. Duo Reges: constructio interrete. Sed ad bona praeterita redeamus.
+                    </p><br>
+                    <p class="description">
+                        -Si est nihil nisi corpus, summa erunt illa: valitudo, vacuitas doloris, pulchritudo, cetera.<br>
+                        Potius inflammat.<br>
+                        -Nam quibus rebus efficiuntur voluptates, eae non sunt in potestate sapientis.<br>
+                        Minime vero@ks.com<br>
+                        -Primum in nostrane potestate est, quid meminerimus?<br>
+                    </p><br>
+                </section>
+            </div>
+            <div class="row justify-content-center">
+                <!--boton de registro-->
+                <a class="row justify-content-center big-btn"  onclick="mostrarCubiertaEmergente();">Confirmar</a>
+                
+            </div>
+        </div>
+        <!-- informacion del registro -->
+        <!-- footer -->
+            <footer>
+                <img class="footer-logo" src="imgs/logo_simpre.png" alt="simple logo">
+                <div class="row justify-content-center">
+                    <p class="footer-p col-1">Copyright 2021</p>
+                </div>
+                <div class="row justify-content-center">
+                    <p class="footer-p col-2">All rights reserved</p>
+                </div>
+            </footer>
+        <!-- footer -->
+    </div>
+
+    <script>
+        function mostrarCubiertaEmergente(){
+            let divEmergente = document.createElement('div');
+            divEmergente.setAttribute('id', 'divEmergente');
+            divEmergente.setAttribute('class', 'cubierta-emergente');
+            document.body.appendChild(divEmergente);
+
+            let btnpopup = document.createElement('a');
+            let btnMensaje = document.createTextNode('Volver al inicio');
+            btnpopup.setAttribute('class', 'big-btn');
+            btnpopup.setAttribute('href', 'index.html');
+            btnpopup.appendChild(btnMensaje);
+            
+            let p_emergente = document.createElement('p');
+            let textoDivMensaje = document.createTextNode('Su registro se ha realizado con exito en el torneo.');
+            p_emergente.appendChild(textoDivMensaje);
+            p_emergente.setAttribute('class','p-emergente');
+
+            let divMensaje = document.createElement('div');
+            divMensaje.appendChild(p_emergente);
+            divMensaje.appendChild(btnpopup);
+            divMensaje.setAttribute('id', 'divMensaje');
+            divMensaje.setAttribute('class', 'mensaje-emergente');
+
+            
+            //let btnpopup = document.createElement('a');
+            //btnpopup.setAttribute('href', 'index.html');
+            //document.body.appendChild(btnpopup);
+
+            //divMensaje.onclick = removerCubiertaEmergente;
+
+            document.body.appendChild(divMensaje);
+
+            if(document.createStyleSheet) {
+            document.createStyleSheet('./css/datailsPages.css');
+            }
+            else {
+            var styles = "@import url(' ./css/datailsPages.css ');";
+            var newSS=document.createElement('link');
+            newSS.rel='stylesheet';
+            newSS.href='data:text/css,'+escape(styles);
+            document.getElementsByTagName("head")[0].appendChild(newSS);
+            }
+        }
+
+        /*function removerCubiertaEmergente(){
+            document.body.removeChild(document.getElementById('divEmergente'));
+            document.body.removeChild(document.getElementById('divMensaje'));
+        }
+
+        window.onload = function() {
+            mostrarCubiertaEmergente();
+        }*/
+        
+        
+
+    </script>
+</body>
+</html>
