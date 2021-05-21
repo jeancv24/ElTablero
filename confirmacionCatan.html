@@ -62,7 +62,7 @@
                 </section>
             </div>
             <div class="row justify-content-center">
-                <!--boton de registro-->
+                <!--boton de confirmacion que muestra la ventana emergente-->
                 <a class="row justify-content-center big-btn"  onclick="mostrarCubiertaEmergente();">Confirmar</a>
                 
             </div>
@@ -81,39 +81,39 @@
         <!-- footer -->
     </div>
 
+    <!--script de la ventana emergente-->
     <script>
         function mostrarCubiertaEmergente(){
+            //da un fondo oscuro al resto de la pagina
             let divEmergente = document.createElement('div');
             divEmergente.setAttribute('id', 'divEmergente');
             divEmergente.setAttribute('class', 'cubierta-emergente');
             document.body.appendChild(divEmergente);
 
+            //crea el boton para volver al inicio
             let btnpopup = document.createElement('a');
             let btnMensaje = document.createTextNode('Volver al inicio');
             btnpopup.setAttribute('class', 'big-btn');
             btnpopup.setAttribute('href', 'index.html');
             btnpopup.appendChild(btnMensaje);
             
+            //crea una etiqueta de tipo p
             let p_emergente = document.createElement('p');
             let textoDivMensaje = document.createTextNode('Su registro se ha realizado con exito en el torneo.');
             p_emergente.appendChild(textoDivMensaje);
             p_emergente.setAttribute('class','p-emergente');
 
+            //crea una estiqueta de tipo div que contiene el boton y el texto
             let divMensaje = document.createElement('div');
             divMensaje.appendChild(p_emergente);
             divMensaje.appendChild(btnpopup);
             divMensaje.setAttribute('id', 'divMensaje');
             divMensaje.setAttribute('class', 'mensaje-emergente');
 
-            
-            //let btnpopup = document.createElement('a');
-            //btnpopup.setAttribute('href', 'index.html');
-            //document.body.appendChild(btnpopup);
-
-            //divMensaje.onclick = removerCubiertaEmergente;
-
+            //muestra la ventana emergente en pantalla
             document.body.appendChild(divMensaje);
 
+            //if para cargar los estilos de la ventana emergente
             if(document.createStyleSheet) {
             document.createStyleSheet('./css/datailsPages.css');
             }
@@ -125,18 +125,6 @@
             document.getElementsByTagName("head")[0].appendChild(newSS);
             }
         }
-
-        /*function removerCubiertaEmergente(){
-            document.body.removeChild(document.getElementById('divEmergente'));
-            document.body.removeChild(document.getElementById('divMensaje'));
-        }
-
-        window.onload = function() {
-            mostrarCubiertaEmergente();
-        }*/
-        
-        
-
     </script>
 </body>
 </html>
