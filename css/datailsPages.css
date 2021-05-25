@@ -1,4 +1,4 @@
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   header {
     background: url(../imgs/catan_movil_details.jpg);
   }
@@ -8,7 +8,7 @@
   width: 15em;
   margin-left: 15em;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   .logo-catan {
     margin-left: 5.5em;
   }
@@ -24,7 +24,7 @@
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   .main-container {
     background: none;
   }
@@ -37,7 +37,7 @@
   border-radius: 1em;
   padding: 1em 1.5em;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   .text-container {
     width: 85%;
     padding: 1em 1em;
@@ -77,7 +77,7 @@
   border-radius: 1em;
   padding: 2em 7em;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   .datos-container {
     width: 85%;
     padding: 2em 2em;
@@ -132,7 +132,7 @@
   margin-left: -100px;
   margin-top: -100px;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   .mensaje-emergente {
     margin-left: -150px;
     width: 85%;

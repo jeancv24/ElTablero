@@ -199,6 +199,9 @@ header{
     @include respond-to($phone) {
         background: none;
     }
+    @include respond-to($tablet-landscape) {
+        height: 100%;
+    }
 }
 
 .photos-container {
