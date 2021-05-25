@@ -146,6 +146,11 @@ body {
     display: none;
   }
 }
+@media only screen and (min-width: 600px) and (max-width: 1350px) {
+  .top-nav {
+    margin: 0 1em;
+  }
+}
 
 .selected-nav {
   color: #FF8036;
@@ -167,6 +172,11 @@ body {
 @media only screen and (max-width: 600px) {
   .text-field {
     display: none;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1350px) {
+  .text-field {
+    width: 6em;
   }
 }
 
@@ -225,7 +235,7 @@ body {
     background: none;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 979px) {
+@media only screen and (min-width: 600px) and (max-width: 1350px) {
   .container-torneos {
     height: 100%;
   }

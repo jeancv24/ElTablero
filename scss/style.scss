@@ -124,6 +124,9 @@ header{
     @include respond-to($phone) {
         display: none;
     }
+    @include respond-to($tablet-landscape) {
+        margin: 0 1em;
+    }
 }
 .selected-nav{
     color: $naranja;
@@ -145,8 +148,10 @@ header{
     }
     @include respond-to($phone) {
         display:none;
-     }
- 
+    }
+    @include respond-to($tablet-landscape) {
+        width: 6em;
+    }
 }
 .btn-buscar{
     background-color: $gray;

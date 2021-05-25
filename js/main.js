@@ -13,6 +13,10 @@ function sideNav(){
         document.getElementsByTagName("html")[0].style.overflow = "auto";
         $openedNav=false;
     }else{
+        window.scroll({
+            top: 0,
+            behavior: 'smooth'
+        });
         document.getElementById("mySidebar").style.width = "350px";
         document.getElementById("hamburgerButton").style.position = "fixed";
         document.getElementsByTagName("html")[0].style.overflow = "hidden";
@@ -48,10 +52,11 @@ function mostrarCubiertaEmergente(){
     divMensaje.setAttribute('id', 'divMensaje');
     divMensaje.setAttribute('class', 'mensaje-emergente');
 
+    //mueve el scroll hasta donde se encuentra la ventana emergente
     window.scroll({
         top: 85,
         behavior: 'smooth'
-      });
+    });
 
     //muestra la ventana emergente en pantalla
     document.body.appendChild(divMensaje);

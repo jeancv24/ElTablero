@@ -1,6 +1,6 @@
 $phone : '(max-width: 600px)';//480px
 $tablet-portrait: '(max-width: 767px)';
-$tablet-landscape: '(min-width: 768px) and (max-width: 979px)';
+$tablet-landscape: '(min-width: 600px) and (max-width: 1350px)';
 $desktop: '(min-width: 480px)';
 $large-desktop: '(min-width: 1200px)';
 $non-retina: 'screen and (-webkit-max-device-pixel-ratio: 1)';
