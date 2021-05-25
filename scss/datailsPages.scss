@@ -1,8 +1,20 @@
+@import 'media-queries';
 @import 'vars';
+
+//header
+header{
+    @include respond-to($phone) {
+        background: url(../imgs/catan_movil_details.jpg);
+    }
+}
+
 //logo del juego
 .logo-catan{
     width: 15em;
     margin-left: 15em;
+    @include respond-to($phone) {
+        margin-left: 5.5em;
+    }
 }
 
 //contenedor de informacion
@@ -12,6 +24,10 @@
     display: block;
     padding-bottom: 3em;
     object-fit: cover;
+    transition: all ease .5s;
+    @include respond-to($phone) {
+        background: none;
+    }
 }
 
 .text-container{
@@ -20,6 +36,10 @@
     background-color: $gray;
     border-radius: 1em;
     padding: 1em 1.5em;
+    @include respond-to($phone) {
+        width: 85%;
+        padding: 1em 1em;
+    }
 }
 
 .h1-title{
@@ -29,7 +49,7 @@
     font-size: 1.5em;
 }
 
-//boton registro
+//boton
 .big-btn{
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
@@ -55,6 +75,10 @@
     background-color: $gray;
     border-radius: 1em;
     padding: 2em 7em;
+    @include respond-to($phone) {
+        width: 85%;
+        padding: 2em 2em;
+    }
 }
 .datos-text-field{
     font-family: 'Roboto', sans-serif;
@@ -74,7 +98,7 @@
 
 .cubierta-emergente {
     background-color: #000;
-    opacity: .5;
+    opacity: .4;
     filter: alpha(opacity=50);
     position: fixed;
     top: 0;
@@ -105,4 +129,8 @@
     left: 44%;
     margin-left: -100px;
     margin-top: -100px;
+    @include respond-to($phone) {
+        margin-left: -150px;
+        width: 85%;
+    }
 }

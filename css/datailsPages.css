@@ -1,6 +1,17 @@
+@media only screen and (max-width: 480px) {
+  header {
+    background: url(../imgs/catan_movil_details.jpg);
+  }
+}
+
 .logo-catan {
   width: 15em;
   margin-left: 15em;
+}
+@media only screen and (max-width: 480px) {
+  .logo-catan {
+    margin-left: 5.5em;
+  }
 }
 
 .main-container {
@@ -10,6 +21,13 @@
   padding-bottom: 3em;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+@media only screen and (max-width: 480px) {
+  .main-container {
+    background: none;
+  }
 }
 
 .text-container {
@@ -18,6 +36,12 @@
   background-color: #393939;
   border-radius: 1em;
   padding: 1em 1.5em;
+}
+@media only screen and (max-width: 480px) {
+  .text-container {
+    width: 85%;
+    padding: 1em 1em;
+  }
 }
 
 .h1-title {
@@ -53,6 +77,12 @@
   border-radius: 1em;
   padding: 2em 7em;
 }
+@media only screen and (max-width: 480px) {
+  .datos-container {
+    width: 85%;
+    padding: 2em 2em;
+  }
+}
 
 .datos-text-field {
   font-family: "Roboto", sans-serif;
@@ -70,7 +100,7 @@
 
 .cubierta-emergente {
   background-color: #000;
-  opacity: 0.5;
+  opacity: 0.4;
   filter: alpha(opacity=50);
   position: fixed;
   top: 0;
@@ -101,4 +131,10 @@
   left: 44%;
   margin-left: -100px;
   margin-top: -100px;
+}
+@media only screen and (max-width: 480px) {
+  .mensaje-emergente {
+    margin-left: -150px;
+    width: 85%;
+  }
 }

@@ -113,28 +113,6 @@
             </footer>
         <!-- footer -->
     </div>
-    <script>
-        //animacion del boton de menu de hamburguesa
-        function buttonAnimation(x) {
-          x.classList.toggle("change");
-        }
-
-        //funcion para abrir el menu de hamburguesa
-        $openedNav=false;
-        function sideNav(){
-            if($openedNav){
-                document.getElementById("mySidebar").style.width = "0";
-                document.getElementById("hamburgerButton").style.position = "absolute";
-                document.getElementsByTagName("html")[0].style.overflow = "auto";
-                $openedNav=false;
-            }else{
-                document.getElementById("mySidebar").style.width = "350px";
-                document.getElementById("hamburgerButton").style.position = "fixed";
-                document.getElementsByTagName("html")[0].style.overflow = "hidden";
-                $openedNav=true;
-            }
-        }
-
-    </script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
