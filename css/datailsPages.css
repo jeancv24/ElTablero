@@ -29,6 +29,11 @@
     background: none;
   }
 }
+@media only screen and (min-width: 600px) and (max-width: 1350px) {
+  .main-container {
+    padding-bottom: 13em;
+  }
+}
 
 .text-container {
   width: 65em;
@@ -149,4 +154,16 @@
     margin-left: -150px;
     width: 85%;
   }
+}
+@media only screen and (min-width: 600px) and (max-width: 1350px) {
+  .mensaje-emergente {
+    margin-left: -155px;
+  }
+}
+
+.error_msg {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  color: #FF8036;
+  text-align: center;
 }

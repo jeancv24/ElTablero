@@ -28,6 +28,9 @@ header{
     @include respond-to($phone) {
         background: none;
     }
+    @include respond-to($tablet-landscape) {
+        padding-bottom: 13em;
+    }
 }
 
 .text-container{
@@ -145,4 +148,15 @@ header{
         margin-left: -150px;
         width: 85%;
     }
+    @include respond-to($tablet-landscape) {
+        margin-left: -155px;
+    }
+}
+
+//verificacion de datos
+.error_msg{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: $naranja;
+    text-align: center;
 }

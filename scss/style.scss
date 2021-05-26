@@ -128,6 +128,9 @@ header{
         margin: 0 1em;
     }
 }
+li{
+    display: inline-block;
+}
 .selected-nav{
     color: $naranja;
 }

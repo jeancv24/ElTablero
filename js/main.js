@@ -73,3 +73,64 @@ function mostrarCubiertaEmergente(){
     document.getElementsByTagName("head")[0].appendChild(newSS);
     }
 }
+
+//verifica los datos ingresados
+$nameErrorShown = false;
+$emailErrorShown = false;
+function checkForm() {
+
+    let hasErrors;
+
+    let name = document.getElementById('nombreCompleto');
+    if (validator.isEmpty(name.value)) {
+        console.log("not an name");
+        name.classList.add("error");
+        let msg = document.createElement("span");
+        msg.innerHTML = "Debe ingresar un nombre.";
+        msg.setAttribute('class','error_msg');
+        if(!$nameErrorShown){
+            showErrorMsg(name, msg);
+            $nameErrorShown = true;
+        }
+        hasErrors = true;
+    }else if($nameErrorShown){
+        hideError(name, $nameErrorShown);
+        $nameErrorShown = false;
+    }
+
+    let email = document.getElementById('correoElectronico');
+    if (!validator.isEmail(email.value)) {
+        console.log("not an email");
+        email.classList.add("error");
+        let msg = document.createElement("span");
+        msg.innerHTML = "Debe ingresar un correo electronico.";
+        msg.setAttribute('class','error_msg');
+        if(!$emailErrorShown){
+            showErrorMsg(email, msg);
+            $emailErrorShown = true;
+        }
+        hasErrors = true;
+    }else if($emailErrorShown){
+        hideError(email, $emailErrorShown);
+        $emailErrorShown = false;
+    }
+
+    if (hasErrors) {
+        return false;
+    } else { 
+        return true;
+    }
+};
+
+function showErrorMsg(referenceNode, newNode) {
+    referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+}
+
+function hideError(el, shownError) {
+    //el.addEventListener("blur", (event) => {
+        el.classList.remove("error");
+        if (el.nextElementSibling !== null && shownError) {
+            el.nextElementSibling.remove();
+        }
+    //});
+}
