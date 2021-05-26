@@ -75,62 +75,60 @@ function mostrarCubiertaEmergente(){
 }
 
 //verifica los datos ingresados
-$nameErrorShown = false;
-$emailErrorShown = false;
+$nameErrorShown = false;//se muestra el error del nombre
+$emailErrorShown = false;//se muestra el error del email
 function checkForm() {
 
     let hasErrors;
 
     let name = document.getElementById('nombreCompleto');
-    if (validator.isEmpty(name.value)) {
+    if (validator.isEmpty(name.value)) {//verifica el nombre
         console.log("not an name");
-        name.classList.add("error");
-        let msg = document.createElement("span");
+        name.classList.add("error");//añade el error
+        let msg = document.createElement("span");//crea el span de error
         msg.innerHTML = "Debe ingresar un nombre.";
         msg.setAttribute('class','error_msg');
         if(!$nameErrorShown){
-            showErrorMsg(name, msg);
+            showErrorMsg(name, msg);//muestra el mensaje de error
             $nameErrorShown = true;
         }
         hasErrors = true;
     }else if($nameErrorShown){
-        hideError(name, $nameErrorShown);
+        hideError(name, $nameErrorShown);//oculta el mensaje de error
         $nameErrorShown = false;
     }
 
     let email = document.getElementById('correoElectronico');
-    if (!validator.isEmail(email.value)) {
+    if (!validator.isEmail(email.value)) {//verifica el email
         console.log("not an email");
-        email.classList.add("error");
-        let msg = document.createElement("span");
+        email.classList.add("error");//añade el error
+        let msg = document.createElement("span");//crea el span de error
         msg.innerHTML = "Debe ingresar un correo electronico.";
         msg.setAttribute('class','error_msg');
         if(!$emailErrorShown){
-            showErrorMsg(email, msg);
+            showErrorMsg(email, msg);//muestra el mensaje de error
             $emailErrorShown = true;
         }
         hasErrors = true;
     }else if($emailErrorShown){
-        hideError(email, $emailErrorShown);
+        hideError(email, $emailErrorShown);//oculta el mensaje de error
         $emailErrorShown = false;
     }
 
-    if (hasErrors) {
+    if (hasErrors) {//da respuesta a si hay un error
         return false;
     } else { 
         return true;
     }
 };
 
-function showErrorMsg(referenceNode, newNode) {
+function showErrorMsg(referenceNode, newNode) {//metodo que muestra el error en pantalla
     referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
 }
 
-function hideError(el, shownError) {
-    //el.addEventListener("blur", (event) => {
-        el.classList.remove("error");
-        if (el.nextElementSibling !== null && shownError) {
-            el.nextElementSibling.remove();
-        }
-    //});
+function hideError(el, shownError) {//oculta el error
+    el.classList.remove("error");
+    if (el.nextElementSibling !== null && shownError) {
+        el.nextElementSibling.remove();
+    }
 }
