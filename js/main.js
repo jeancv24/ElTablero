@@ -9,7 +9,6 @@ $openedNav=false;
 function sideNav(){
     if($openedNav){
         document.getElementById("mySidebar").style.width = "0";
-        document.getElementById("hamburgerButton").style.position = "absolute";
         document.getElementsByTagName("html")[0].style.overflow = "auto";
         $openedNav=false;
     }else{
@@ -18,7 +17,6 @@ function sideNav(){
             behavior: 'smooth'
         });
         document.getElementById("mySidebar").style.width = "350px";
-        document.getElementById("hamburgerButton").style.position = "fixed";
         document.getElementsByTagName("html")[0].style.overflow = "hidden";
         $openedNav=true;
     }

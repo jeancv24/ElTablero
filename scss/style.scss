@@ -40,8 +40,8 @@ header{
     cursor: pointer;
     display: none;
     width: 2em;
-    position: absolute;
-    z-index: 2;
+    position: fixed;
+    z-index: 3;
     @include respond-to($phone) {
         display: inline-block;
     }
@@ -70,7 +70,7 @@ header{
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
     background-color: $gray;
@@ -88,7 +88,7 @@ header{
         margin: 1em 2em 1.5em 0;
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
-        font-size: 2.2em;
+        font-size: 2em;
         background: $naranja;
         border-radius: 0 30px 30px 0;
         display: flex;
@@ -174,8 +174,12 @@ li{
         border: 0;
         width: 57px;
         height: 62px;
-        position: absolute;
+        position: fixed;
+        z-index: 1;
      }
+    @include respond-to($tiny-phone) {
+        left: 18em;
+    }
 }
 //buscar
 

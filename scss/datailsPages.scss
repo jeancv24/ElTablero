@@ -15,6 +15,9 @@ header{
     @include respond-to($phone) {
         margin-left: 5.5em;
     }
+    @include respond-to($tiny-phone) {
+        margin-left: 4.5em;
+    }
 }
 
 //contenedor de informacion
@@ -97,6 +100,64 @@ header{
     }
 }
 
+//swith adulto-niño
+.container-switch{
+    padding: 3em 1.8em 0 1.8em;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: 0 1em 0 2em;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $lightgray;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: $white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+
+//input:checked + .slider{
+    //background-color: $naranja;
+//}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.p-datos{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    width: 2em;
+    color: $white;
+    display: inline;
+    padding: 2px;
+}
+
 //torneos relacionados
 .relacionados-container{
     background: #141414;
@@ -125,6 +186,9 @@ header{
 
 .p-emergente{
     padding-bottom: 1em;
+    @include respond-to($tiny-phone) {
+        padding-bottom: 0em;
+    }
 }
 
 .mensaje-emergente {
@@ -150,6 +214,10 @@ header{
     }
     @include respond-to($tablet-landscape) {
         margin-left: -155px;
+    }
+    @include respond-to($tiny-phone) {
+        padding-top: 1em;
+        margin-left: -136px;
     }
 }
 

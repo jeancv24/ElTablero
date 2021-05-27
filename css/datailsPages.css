@@ -13,6 +13,11 @@
     margin-left: 5.5em;
   }
 }
+@media only screen and (max-width: 400px) {
+  .logo-catan {
+    margin-left: 4.5em;
+  }
+}
 
 .main-container {
   background: url(../imgs/catan2.jpg);
@@ -103,6 +108,62 @@
   outline: none;
 }
 
+.container-switch {
+  padding: 3em 1.8em 0 1.8em;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 0 1em 0 2em;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #707070;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.p-datos {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  width: 2em;
+  color: #fff;
+  display: inline;
+  padding: 2px;
+}
+
 .relacionados-container {
   background: #141414;
 }
@@ -129,6 +190,11 @@
 
 .p-emergente {
   padding-bottom: 1em;
+}
+@media only screen and (max-width: 400px) {
+  .p-emergente {
+    padding-bottom: 0em;
+  }
 }
 
 .mensaje-emergente {
@@ -158,6 +224,12 @@
 @media only screen and (min-width: 600px) and (max-width: 1350px) {
   .mensaje-emergente {
     margin-left: -155px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .mensaje-emergente {
+    padding-top: 1em;
+    margin-left: -136px;
   }
 }
 

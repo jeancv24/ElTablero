@@ -71,6 +71,16 @@
                     <form class="row justify-content-center" action="./confirmacionCatan.php" method="POST" onsubmit="return checkForm(this);">
                         <input id="nombreCompleto" class="datos-text-field" type="text" name="nombreCompleto" placeholder="Nombre Completo">
                         <input id="correoElectronico" class=" datos-text-field" type="text" name="correoElectronico" placeholder="Correo Electronico">
+
+                        <div class="row justify-content-center container-switch">
+                            <p class="p-datos adulto">Adulto</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                            <p class="p-datos nino">Niño</p>
+                        </div>
+                        
                         <input class="big-btn" type="submit" value="Aceptar">
                     </form>
                 </section>
