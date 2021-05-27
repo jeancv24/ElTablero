@@ -36,7 +36,7 @@ function mostrarCubiertaEmergente(){
     let btnpopup = document.createElement('a');
     let btnMensaje = document.createTextNode('Volver al inicio');
     btnpopup.setAttribute('class', 'big-btn');
-    btnpopup.setAttribute('href', 'index.html');
+    btnpopup.setAttribute('href', 'index.php');
     btnpopup.appendChild(btnMensaje);
     
     //crea una etiqueta de tipo p

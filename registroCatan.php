@@ -28,10 +28,10 @@
             </div>
             <div id="mySidebar" class="sidebar">
                 <img src="imgs/logo_simpre.png" alt="simple logo">
-                <a href="detailsCatan.html">Catan</a>
-                <a href="detailsCarcassone.html">Carcassone</a>
-                <a href="detailsStoneage.html">Stone Age</a>
-                <a href="detailsScythe.html">Scythe</a>
+                <a href="detailsCatan.php">Catan</a>
+                <a href="#">Carcassone</a>
+                <a href="#">Stone Age</a>
+                <a href="#">Scythe</a>
             </div>
             <!--menu de hamburguesa-->
             <div  class="row justify-content-center nav-container">
@@ -39,14 +39,14 @@
                 <nav class="col-10">
                     <ul>
                         <li>
-                            <a class="logo-container" href="index.html">
+                            <a class="logo-container" href="index.php">
                                 <img class="logo" src="imgs/logo_amplio.png" alt="main logo">
                             </a>
                         </li>
-                        <li><a class="top-nav" href="detailsCatan.html">Catan</a></li>
-                        <li><a class="top-nav" href="detailsCarcassone.html">Carcassone</a></li>
-                        <li><a class="top-nav" href="detailsStoneage.html">Stone Age</a></li>
-                        <li><a class="top-nav" href="detailsScythe.html">Scythe</a></li>
+                        <li><a class="top-nav" href="detailsCatan.php">Catan</a></li>
+                        <li><a class="top-nav" href="#">Carcassone</a></li>
+                        <li><a class="top-nav" href="#">Stone Age</a></li>
+                        <li><a class="top-nav" href="#">Scythe</a></li>
                     </ul>
                 </nav>
                 <!-- nav -->
@@ -67,22 +67,21 @@
             <img class="logo-catan" src="./imgs/catan_logo_sin fondo.png" alt="logo de Catan">
             <div class="row justify-content-center">
                 <section class="col-10 text-container">
-                    <h1 class="row justify-content-center h1-title">Confirme su registro</h1>
+                    <h1 class="row justify-content-center h1-title">Registro</h1>
                     <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Conferam tecum, quam cuique verso rem subicias; Scaevolam M. Duo Reges: constructio interrete. Sed ad bona praeterita redeamus.
                     </p><br>
                     <p class="description">
                         -Si est nihil nisi corpus, summa erunt illa: valitudo, vacuitas doloris, pulchritudo, cetera.<br>
-                        Potius inflammat.<br>
+                        -Potius inflammat, ut coercendi magis quam dedocendi esse videantur.<br>
                         -Nam quibus rebus efficiuntur voluptates, eae non sunt in potestate sapientis.<br>
-                        Minime vero@ks.com<br>
+                        -Minime vero, inquit ille, consentit.<br>
                         -Primum in nostrane potestate est, quid meminerimus?<br>
                     </p><br>
                 </section>
             </div>
             <div class="row justify-content-center">
-                <!--boton de confirmacion que muestra la ventana emergente-->
-                <a class="row justify-content-center big-btn"  onclick="mostrarCubiertaEmergente();">Confirmar</a>
-                
+                <!--boton para registrarse-->
+                <a  class="row justify-content-center big-btn" href="datosCatan.php">Registrarse</a>
             </div>
         </div>
         <!-- informacion del registro -->
@@ -98,8 +97,6 @@
             </footer>
         <!-- footer -->
     </div>
-
-    <!--script de la ventana emergente-->
     <script src="./js/main.js"></script>
 </body>
 </html>

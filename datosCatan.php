@@ -28,10 +28,10 @@
             </div>
             <div id="mySidebar" class="sidebar">
                 <img src="imgs/logo_simpre.png" alt="simple logo">
-                <a href="detailsCatan.html">Catan</a>
-                <a href="detailsCarcassone.html">Carcassone</a>
-                <a href="detailsStoneage.html">Stone Age</a>
-                <a href="detailsScythe.html">Scythe</a>
+                <a href="detailsCatan.php">Catan</a>
+                <a href="#">Carcassone</a>
+                <a href="#">Stone Age</a>
+                <a href="#">Scythe</a>
             </div>
             <!--menu de hamburguesa-->
             <div  class="row justify-content-center nav-container">
@@ -39,14 +39,14 @@
                 <nav class="col-10">
                     <ul>
                         <li>
-                            <a class="logo-container" href="index.html">
+                            <a class="logo-container" href="index.php">
                                 <img class="logo" src="imgs/logo_amplio.png" alt="main logo">
                             </a>
                         </li>
-                        <li><a class="top-nav" href="detailsCatan.html">Catan</a></li>
-                        <li><a class="top-nav" href="detailsCarcassone.html">Carcassone</a></li>
-                        <li><a class="top-nav" href="detailsStoneage.html">Stone Age</a></li>
-                        <li><a class="top-nav" href="detailsScythe.html">Scythe</a></li>
+                        <li><a class="top-nav" href="detailsCatan.php">Catan</a></li>
+                        <li><a class="top-nav" href="#">Carcassone</a></li>
+                        <li><a class="top-nav" href="#">Stone Age</a></li>
+                        <li><a class="top-nav" href="#">Scythe</a></li>
                     </ul>
                 </nav>
                 <!-- nav -->
@@ -68,7 +68,7 @@
             <div class="row justify-content-center">
                 <section class="col-10 datos-container">
                     <h1 class="row justify-content-center h1-title">Ingrese sus datos</h1>
-                    <form class="row justify-content-center" action="./confirmacionCatan.html" method="POST" onsubmit="return checkForm(this);">
+                    <form class="row justify-content-center" action="./confirmacionCatan.php" method="POST" onsubmit="return checkForm(this);">
                         <input id="nombreCompleto" class="datos-text-field" type="text" name="nombreCompleto" placeholder="Nombre Completo">
                         <input id="correoElectronico" class=" datos-text-field" type="text" name="correoElectronico" placeholder="Correo Electronico">
                         <input class="big-btn" type="submit" value="Aceptar">

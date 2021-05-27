@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
     <!-- main stylesheet -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/datailsPages.css">
 </head>
 <body>
     <div class="container-fluid">
@@ -27,10 +28,10 @@
             </div>
             <div id="mySidebar" class="sidebar">
                 <img src="imgs/logo_simpre.png" alt="simple logo">
-                <a href="detailsCatan.html">Catan</a>
-                <a href="detailsCarcassone.html">Carcassone</a>
-                <a href="detailsStoneage.html">Stone Age</a>
-                <a href="detailsScythe.html">Scythe</a>
+                <a href="detailsCatan.php">Catan</a>
+                <a href="#">Carcassone</a>
+                <a href="#">Stone Age</a>
+                <a href="#">Scythe</a>
             </div>
             <!--menu de hamburguesa-->
             <div  class="row justify-content-center nav-container">
@@ -38,14 +39,14 @@
                 <nav class="col-10">
                     <ul>
                         <li>
-                            <a class="logo-container" href="index.html">
+                            <a class="logo-container" href="index.php">
                                 <img class="logo" src="imgs/logo_amplio.png" alt="main logo">
                             </a>
                         </li>
-                        <li><a class="top-nav" href="detailsCatan.html">Catan</a></li>
-                        <li><a class="top-nav" href="detailsCarcassone.html">Carcassone</a></li>
-                        <li><a class="top-nav" href="detailsStoneage.html">Stone Age</a></li>
-                        <li><a class="top-nav" href="detailsScythe.html">Scythe</a></li>
+                        <li><a class="top-nav" href="detailsCatan.php">Catan</a></li>
+                        <li><a class="top-nav" href="#">Carcassone</a></li>
+                        <li><a class="top-nav" href="#">Stone Age</a></li>
+                        <li><a class="top-nav" href="#">Scythe</a></li>
                     </ul>
                 </nav>
                 <!-- nav -->
@@ -60,51 +61,56 @@
             </div>
         </header>
         <!-- header -->
-        <!-- torneos -->
-        <div class="container-torneos">
+        <!-- detalles del torneo -->
+        <div class="main-container">
             <!-- h1 title -->
-            <h1 class="row justify-content-center h1-torneos">Torneos</h1>
+            <img class="logo-catan" src="./imgs/catan_logo_sin fondo.png" alt="logo de Catan">
+            <div class="row justify-content-center">
+                <section class="col-10 text-container">
+                    <h1 class="row justify-content-center h1-title">Información</h1>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo plebiscito decreta a senatu est consuli quaestio Cn. Sed quid sentiat, non videtis. Moriatur, inquit. Magna laus.
+                        
+                        </p><br>
+                    <p class="description">
+                        Duo Reges: constructio interrete:</p><br>
+                    <p class="description">
+                        -Hoc sic expositum dissimile est superiori.</p><br>
+                    <p class="description">-Tubulo putas dicere?</p><br>
+                    <p class="description">-Epicurus ignorat? Sed nimis multa.</p>
+                </section>
+            </div>
+            <div class="row justify-content-center">
+                <!--boton de registro-->
+                <a  class="row justify-content-center big-btn" href="registroCatan.php">Registro</a>
+            </div>
+        </div>
+        <!-- detalles del torneo -->
+        <!-- eventos relacionado -->
+        <div class="relacionados-container">
+            <h2 class="row justify-content-center torneos-relacionados">Torneos relacionados</h2>
             <span class="line"></span>
-            <section class="photos-container row justify-content-center">
-                <section class="image-container col-2">
-                    <h2 class="title">Catan</h2>
+            <div class="row justify-content-center">
+                <section class="image-container col-4">
+                    <h3 class="title">Catan</h3>
                     <img class="image-size" src="./imgs/catan.jpg" alt="Foto del juego">
                     <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid enim possumus hoc agere divinius? Cur igitur, inquam, res tam dissimiles eodem nomine appellas? Laboro autem non sine causa</p>
                     <div class="row justify-content-center">
                         <!--boton de mas informacion-->
-                        <a  class="row justify-content-center btn-vermas" href="detailsCatan.html">Ver más</a>
+                        <a  class="row justify-content-center btn-vermas" href="detailsCatan.php">Ver más</a>
                     </div>
                 </section>
-                <section class="image-container col-2">
-                    <h2 class="title">Carcassone</h2>
-                    <img class="image-size" src="./imgs/carcassone.jpg" alt="Foto del juego">
+                <section class="image-container col-4">
+                    <h3 class="title">Catan</h3>
+                    <img class="image-size" src="./imgs/catan.jpg" alt="Foto del juego">
                     <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid enim possumus hoc agere divinius? Cur igitur, inquam, res tam dissimiles eodem nomine appellas? Laboro autem non sine causa</p>
                     <div class="row justify-content-center">
                         <!--boton de mas informacion-->
-                        <a  class="row justify-content-center btn-vermas" href="details_carcassone.html">Ver más</a>
+                        <a  class="row justify-content-center btn-vermas" href="detailsCatan.php">Ver más</a>
                     </div>
                 </section>
-                <section class="image-container col-2">
-                    <h2 class="title">Stone Age</h2>
-                    <img class="image-size" src="./imgs/stoneage.jpg" alt="Foto del juego">
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid enim possumus hoc agere divinius? Cur igitur, inquam, res tam dissimiles eodem nomine appellas? Laboro autem non sine causa</p>
-                    <div class="row justify-content-center">
-                        <!--boton de mas informacion-->
-                        <a  class="row justify-content-center btn-vermas" href="details_stoneage.html">Ver más</a>
-                    </div>
-                </section>
-                <section class="image-container col-2">
-                    <h2 class="title">Scythe</h2>
-                    <img class="image-size" src="./imgs/Scythe.jpg" alt="Foto del juego">
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid enim possumus hoc agere divinius? Cur igitur, inquam, res tam dissimiles eodem nomine appellas? Laboro autem non sine causa</p>
-                    <div class="row justify-content-center">
-                        <!--boton de mas informacion-->
-                        <a  class="row justify-content-center btn-vermas" href="details_scythe.html">Ver más</a>
-                    </div>
-                </section>
-            </section>
+            </div>
         </div>
-        <!-- torneos -->
+        <!-- eventos relacionado -->
         <!-- footer -->
             <footer>
                 <img class="footer-logo" src="imgs/logo_simpre.png" alt="simple logo">
