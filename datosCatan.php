@@ -9,6 +9,8 @@
     <link rel="shortcut icon" href="./imgs/logo_icon.png">
     <!-- Bootstrap link/version -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <!-- libreria para el buscador -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
@@ -29,9 +31,9 @@
             <div id="mySidebar" class="sidebar">
                 <img src="imgs/logo_simpre.png" alt="simple logo">
                 <a href="detailsCatan.php">Catan</a>
-                <a href="#">Carcassone</a>
-                <a href="#">Stone Age</a>
-                <a href="#">Scythe</a>
+                <a href="detailsCatan.php">Carcassone</a>
+                <a href="detailsCatan.php">Stone Age</a>
+                <a href="detailsCatan.php">Scythe</a>
             </div>
             <!--menu de hamburguesa-->
             <div  class="row justify-content-center nav-container">
@@ -44,18 +46,30 @@
                             </a>
                         </li>
                         <li><a class="top-nav" href="detailsCatan.php">Catan</a></li>
-                        <li><a class="top-nav" href="#">Carcassone</a></li>
-                        <li><a class="top-nav" href="#">Stone Age</a></li>
-                        <li><a class="top-nav" href="#">Scythe</a></li>
+                        <li><a class="top-nav" href="detailsCatan.php">Carcassone</a></li>
+                        <li><a class="top-nav" href="detailsCatan.php">Stone Age</a></li>
+                        <li><a class="top-nav" href="detailsCatan.php">Scythe</a></li>
                     </ul>
                 </nav>
                 <!-- nav -->
                 <!--buscar-->
-                <section class="col-2">
-                    <form action="#" method="POST">
-                        <input id="busqueda" class="text-field" type="text" name="busqueda" placeholder="Buscar">
-                        <input class="btn-buscar" type="submit" value="">
-                    </form>
+                <section class="col-1">
+                    <div class="container-buscador">
+                        <button id="buscarBtn" class="btn-buscar"></button>
+                        <div id="buscadorList" class="buscador-content">
+                            <input type="text" placeholder="Buscar..." id="buscadorInput" onkeyup="buscadorFunction()">
+                            <a href="detailsCatan.php">Catan</a>
+                            <a href="detailsCatan.php">Carcassone</a>
+                            <a href="detailsCatan.php">Stone Age</a>
+                            <a href="detailsCatan.php">Scythe</a>
+                            <a href="detailsCatan.php">Dice Forge</a>
+                            <a href="detailsCatan.php">Azul</a>
+                            <a href="detailsCatan.php">Ticket to Ride</a>
+                            <a href="detailsCatan.php">Dead of Winter</a>
+                            <a href="detailsCatan.php">The Island</a>
+                            <a href="detailsCatan.php">Potion Explosion</a>
+                        </div>
+                    </div>
                 </section>
                 <!--buscar-->
             </div>
@@ -73,12 +87,12 @@
                         <input id="correoElectronico" class=" datos-text-field" type="text" name="correoElectronico" placeholder="Correo Electronico">
 
                         <div class="row justify-content-center container-switch">
-                            <p class="p-datos adulto">Adulto</p>
+                            <p class="p-datos">Adulto</p>
                             <label class="switch">
                                 <input type="checkbox">
                                 <span class="slider"></span>
                             </label>
-                            <p class="p-datos nino">Niño</p>
+                            <p class="p-datos">Niño</p>
                         </div>
                         
                         <input class="big-btn" type="submit" value="Aceptar">

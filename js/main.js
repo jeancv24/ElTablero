@@ -22,6 +22,50 @@ function sideNav(){
     }
 }
 
+//buscador
+//abre y cierra el buscador
+$openedBuscador=false;
+$(function(){
+    $(document).on("click",function(e) {//cierra el buscador al presionar fuera de él
+    var container = $("#buscadorList");       
+            if (!container.is(e.target) && container.has(e.target).length === 0 && $openedBuscador) { 
+                document.getElementById("buscadorList").classList.toggle("show");//oculta el buscador
+                document.getElementsByTagName("html")[0].style.overflow = "auto";//activa el scroll
+                $openedBuscador=false;
+            }
+    });
+    $("#buscarBtn").on("click", function(event){//abre el buscador al presionar el boton
+        if(!$openedBuscador){
+            document.getElementById("buscadorList").classList.toggle("show");//muestra el buscador
+            $openedBuscador=true;
+            event.stopImmediatePropagation();
+            window.scroll({//mueve el scroll hasta el buscador
+                top: 0,
+                behavior: 'smooth'
+            });
+            document.getElementsByTagName("html")[0].style.overflow = "hidden";//desactiva el scroll
+        }
+    });
+});
+
+
+//filtra para mostrar lo que coincide con lo buscado
+function buscadorFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("buscadorInput");
+    filter = input.value.toUpperCase();//no hace diferencia entre mayusculas y minusculas
+    div = document.getElementById("buscadorList");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {//recorre y compara cada "a" con la busqueda
+        txtValue = a[i].textContent || a[i].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+
 //pop up de la pagina de confirmacion
 function mostrarCubiertaEmergente(){
     //da un fondo oscuro al resto de la pagina
