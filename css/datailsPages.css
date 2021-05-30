@@ -109,7 +109,7 @@
 }
 
 .container-switch {
-  padding: 3em 1.8em 0 1.8em;
+  padding: 3em 1.8em 0 0.5em;
 }
 
 .switch {
@@ -117,7 +117,7 @@
   display: inline-block;
   width: 60px;
   height: 34px;
-  margin: 0 1em 0 2em;
+  margin: 0 1em 0 3em;
 }
 
 .switch input {

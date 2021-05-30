@@ -10,7 +10,7 @@
     <!-- Bootstrap link/version -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <!-- libreria para el buscador -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
@@ -35,7 +35,10 @@
                 <a href="detailsCatan.php">Scythe</a>
             </div>
             <!--menu de hamburguesa-->
-            <div  class="row justify-content-center nav-container">
+            <div id="hiddenSquare" class="black-square">
+                <img class="hidden-logo" src="imgs/logo_simpre.png" alt="simple logo">
+            </div>
+            <div id="header" class="row justify-content-center nav-container">
                 <!-- nav -->
                 <nav class="col-10">
                     <ul>
@@ -54,7 +57,7 @@
                 <!--buscar-->
                 <section class="col-1">
                     <div class="container-buscador">
-                        <button id="buscarBtn" class="btn-buscar"></button>
+                        <button id="buscarBtn" class="btn-buscar">Buscar</button>
                         <div id="buscadorList" class="buscador-content">
                             <input type="text" placeholder="Buscar..." id="buscadorInput" onkeyup="buscadorFunction()">
                             <a href="detailsCatan.php">Catan</a>
@@ -83,8 +86,11 @@
                 <section class="image-container col-2">
                     <h2 class="title">Catan</h2>
                     <img class="image-size" src="./imgs/catan.jpg" alt="Foto del juego">
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid enim possumus hoc agere divinius? Cur igitur, inquam, res tam dissimiles eodem nomine appellas? Laboro autem non sine causa</p>
-                    <div class="row justify-content-center">
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid enim possumus hoc agere divinius? Cur igitur, inquam.</p>
+                    <p class="description">Categoria<br>
+                                            Lugar: Salon de eventos El Tablero<br>
+                                            Fecha: 18/11/2022<br>
+                                            Hora: 4:00 pm</p>                    <div class="row justify-content-center">
                         <!--boton de mas informacion-->
                         <a  class="row justify-content-center btn-vermas" href="detailsCatan.php">Ver más</a>
                     </div>
@@ -92,7 +98,11 @@
                 <section class="image-container col-2">
                     <h2 class="title">Carcassone</h2>
                     <img class="image-size" src="./imgs/carcassone.jpg" alt="Foto del juego">
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid enim possumus hoc agere divinius? Cur igitur, inquam, res tam dissimiles eodem nomine appellas? Laboro autem non sine causa</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid enim possumus hoc agere divinius? Cur igitur, inquam.</p>
+                    <p class="description">Categoria<br>
+                                            Lugar: Salon de eventos El Tablero<br>
+                                            Fecha: 18/11/2022<br>
+                                            Hora: 4:00 pm</p>
                     <div class="row justify-content-center">
                         <!--boton de mas informacion-->
                         <a  class="row justify-content-center btn-vermas" href="detailsCatan.php">Ver más</a>
@@ -101,8 +111,11 @@
                 <section class="image-container col-2">
                     <h2 class="title">Stone Age</h2>
                     <img class="image-size" src="./imgs/stoneage.jpg" alt="Foto del juego">
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid enim possumus hoc agere divinius? Cur igitur, inquam, res tam dissimiles eodem nomine appellas? Laboro autem non sine causa</p>
-                    <div class="row justify-content-center">
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid enim possumus hoc agere divinius? Cur igitur, inquam.</p>
+                    <p class="description">Categoria<br>
+                                            Lugar: Salon de eventos El Tablero<br>
+                                            Fecha: 18/11/2022<br>
+                                            Hora: 4:00 pm</p>                    <div class="row justify-content-center">
                         <!--boton de mas informacion-->
                         <a  class="row justify-content-center btn-vermas" href="detailsCatan.php">Ver más</a>
                     </div>
@@ -110,8 +123,11 @@
                 <section class="image-container col-2">
                     <h2 class="title">Scythe</h2>
                     <img class="image-size" src="./imgs/Scythe.jpg" alt="Foto del juego">
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid enim possumus hoc agere divinius? Cur igitur, inquam, res tam dissimiles eodem nomine appellas? Laboro autem non sine causa</p>
-                    <div class="row justify-content-center">
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid enim possumus hoc agere divinius? Cur igitur, inquam.</p>
+                    <p class="description">Categoria<br>
+                                            Lugar: Salon de eventos El Tablero<br>
+                                            Fecha: 18/11/2022<br>
+                                            Hora: 4:00 pm</p>                    <div class="row justify-content-center">
                         <!--boton de mas informacion-->
                         <a  class="row justify-content-center btn-vermas" href="detailsCatan.php">Ver más</a>
                     </div>

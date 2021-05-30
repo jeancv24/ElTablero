@@ -119,6 +119,7 @@ function mostrarCubiertaEmergente(){
 //verifica los datos ingresados
 $nameErrorShown = false;//se muestra el error del nombre
 $emailErrorShown = false;//se muestra el error del email
+$cantidadErrorShown = false;//se muestra el error de la cantidad
 function checkForm() {
 
     let hasErrors;
@@ -157,6 +158,23 @@ function checkForm() {
         $emailErrorShown = false;
     }
 
+    let cantidad = document.getElementById('cantidadCampos');
+    if (!validator.isNumeric(cantidad.value)) {//verifica la cantidad
+        console.log("not a number");
+        cantidad.classList.add("error");//añade el error
+        let msg = document.createElement("span");//crea el span de error
+        msg.innerHTML = "Debe ingresar un número.";
+        msg.setAttribute('class','error_msg');
+        if(!$cantidadErrorShown){
+            showErrorMsg(cantidad, msg);//muestra el mensaje de error
+            $cantidadErrorShown = true;
+        }
+        hasErrors = true;
+    }else if($cantidadErrorShown){
+        hideError(cantidad, $cantidadErrorShown);//oculta el mensaje de error
+        $cantidadErrorShown = false;
+    }
+
     if (hasErrors) {//da respuesta a si hay un error
         return false;
     } else { 
@@ -174,3 +192,25 @@ function hideError(el, shownError) {//oculta el error
         el.nextElementSibling.remove();
     }
 }
+
+
+
+//funcion que muestra el rectangulo negro al bajar
+$documentWidth=0;
+$(window).scroll(function(){
+    window_y = $(window).scrollTop();//maneja cuanto se ha hecho de scroll
+    scroll_critical = parseInt($("header").height());//es el punto en el que aparecera el cuadro
+    let square = document.getElementById("hiddenSquare");//obtiene el cuadro
+    if (window_y > scroll_critical) {
+        $(document).ready(function(){//obtiene el ancho de la pagina para que no funcione en desktop
+            $documentWidth=$('body').width();
+        })
+        if($documentWidth < 600){
+            square.style.display = "block";//lo muestra
+        }else{
+            square.style.display = "none";//lo coulta
+        }
+    } else {
+        square.style.display = "none";//lo coulta
+    }
+});
