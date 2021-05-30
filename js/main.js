@@ -211,6 +211,6 @@ $(window).scroll(function(){
             square.style.display = "none";//lo coulta
         }
     } else {
-        square.style.display = "none";//lo coulta
+        square.style.display = "none";//lo oculta
     }
 });
