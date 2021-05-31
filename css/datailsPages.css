@@ -120,6 +120,11 @@
   margin: 0 1em 0 3em;
 }
 
+.switch-label {
+  height: 0px;
+  z-index: -1;
+}
+
 .switch input {
   opacity: 0;
   width: 0;

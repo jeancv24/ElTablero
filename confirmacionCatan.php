@@ -37,7 +37,9 @@
             </div>
             <!--menu de hamburguesa-->
             <div id="hiddenSquare" class="black-square">
-                <img class="hidden-logo" src="imgs/logo_simpre.png" alt="simple logo">
+                <a href="index.php">
+                    <img class="hidden-logo" src="imgs/logo_simpre.png" alt="simple logo">
+                </a>
             </div>
             <div  class="row justify-content-center nav-container">
                 <!-- nav -->

@@ -37,7 +37,9 @@
             </div>
             <!--menu de hamburguesa-->
             <div id="hiddenSquare" class="black-square">
-                <img class="hidden-logo" src="imgs/logo_simpre.png" alt="simple logo">
+                <a href="index.php">
+                    <img class="hidden-logo" src="imgs/logo_simpre.png" alt="simple logo">
+                </a>
             </div>
             <div  class="row justify-content-center nav-container">
                 <!-- nav -->
@@ -101,7 +103,7 @@
             </div>
         </div>
         <!-- detalles del torneo -->
-        <!-- eventos relacionado -->
+        <!-- eventos relacionados -->
         <div class="relacionados-container">
             <h2 class="row justify-content-center torneos-relacionados">Torneos relacionados</h2>
             <span class="line"></span>

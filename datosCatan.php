@@ -37,7 +37,9 @@
             </div>
             <!--menu de hamburguesa-->
             <div id="hiddenSquare" class="black-square">
-                <img class="hidden-logo" src="imgs/logo_simpre.png" alt="simple logo">
+                <a href="index.php">
+                    <img class="hidden-logo" src="imgs/logo_simpre.png" alt="simple logo">
+                </a>
             </div>
             <div  class="row justify-content-center nav-container">
                 <!-- nav -->
@@ -92,13 +94,14 @@
 
                         <div class="row justify-content-center container-switch">
                             <p class="p-datos">Adulto(s)</p>
-                            <label for="switched" class="switch">
+                            <label class="switch">
                                 <input id="switched" type="checkbox">
                                 <span class="slider"></span>
                             </label>
                             <p class="p-datos">Niño(s)</p>
                         </div>
-                        
+                        <label class="switch-label" for="switched">Adulto o Niño</label>
+
                         <input class="big-btn" type="submit" value="Aceptar">
                     </form>
                 </section>
